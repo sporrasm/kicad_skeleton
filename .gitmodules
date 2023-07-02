@@ -1,3 +1,9 @@
 [submodule "kicad_custom_libs"]
 	path = kicad_custom_libs
 	url = git@github.com:sporrasm/kicad_custom_libs.git
+[submodule "kicad_official/kicad_footprints"]
+	path = kicad_official/kicad_footprints
+	url = git@gitlab.com:kicad/libraries/kicad-footprints.git
+[submodule "kicad_official/kicad_symbols"]
+	path = kicad_official/kicad_symbols
+	url = git@gitlab.com:kicad/libraries/kicad-symbols.git

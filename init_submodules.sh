@@ -7,6 +7,8 @@ DIR=`pwd`
 
 SUBMODULES="\
     ./kicad_custom_libs/ \
+    ./kicad_official/kicad_footprints/ \
+    ./kicad_official/kicad_symbols/ \
 "
 git submodule sync
 for mod in $SUBMODULES; do 
