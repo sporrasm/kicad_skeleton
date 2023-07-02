@@ -2,7 +2,7 @@
 set -e
 
 help_f () {
-    echo "Usage: in $HOME, run ./kicad_setup/configure_kicad.sh [KICAD_VERSION] [OPTIONS]"
+    echo "Usage: in kicad_skeleton dir, run ./configure_kicad.sh [KICAD_VERSION] [OPTIONS]"
     echo "Options:"
     echo "-b        backup existing files, if they exist"
     echo "-h        show this help"
@@ -16,7 +16,7 @@ backup=0
 overwrite=0
 update=0
 
-while getopts 'bhu' option; do
+while getopts 'bhou' option; do
     case "$option" in
         b) backup=1;;
         h) help_f; exit 0;;
@@ -124,5 +124,4 @@ fi
 
 cp $symdir/sym-lib-table $kicad_conf_path/sym-lib-table
 cp $fpdir/fp-lib-table $kicad_conf_path/fp-lib-table
-
         
