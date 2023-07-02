@@ -1,0 +1,3 @@
+[submodule "kicad_custom_libs"]
+	path = kicad_custom_libs
+	url = git@github.com:sporrasm/kicad_custom_libs.git
